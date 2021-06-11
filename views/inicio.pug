@@ -1,0 +1,29 @@
+extends ./layout/index
+block slider 
+    .slider 
+        h1 Rio de Janeiro 
+        em aventura
+block contenido
+    main.container.mt-5 
+        h2.text-center.mb-5 Sobre nosotros
+        .row.mb-5 
+            .col-md-6 
+                p Lorem ipsum dolor sit amet, consectetur adipiscing elit. In maximus lorem vitae turpis pulvinar, eu tincidunt nisi porttitor. Vestibulum vestibulum fermentum posuere. Sed feugiat fermentum arcu nec varius. In dolor leo, sodales eu nunc eu, pellentesque porttitor lectus. Phasellus iaculis sagittis massa maximus laoreet. Cras mattis non arcu et hendrerit. Duis et diam magna. Suspendisse sollicitudin lacus sed magna dapibus lobortis. Ut tristique ipsum lorem, sed gravida turpis aliquam vitae. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec fringilla, ante non luctus tempus, mauris tellus consectetur ante, vel egestas nunc ante ac quam. Morbi egestas bibendum porta. Proin urna massa, pharetra non porta accumsan, dictum sit amet nunc. Proin a dolor dui.
+                p Mauris ac porttitor dolor. Quisque elementum eu purus nec feugiat. Quisque non semper risus, in euismod lectus. Aliquam viverra ipsum enim, vulputate dictum ante vehicula eu. Pellentesque maximus leo eget odio interdum, non cursus justo vulputate. Nunc fermentum scelerisque enim, a eleifend arcu dapibus non. Curabitur egestas ipsum vel nibh rhoncus viverra. Phasellus lacus mi, tempus ut imperdiet quis, tempus sed enim. Etiam lacinia nisi ut urna egestas porttitor. Suspendisse laoreet et massa vitae feugiat. Sed sem ipsum, fermentum vel leo vel, pulvinar sagittis mi. Maecenas laoreet tincidunt hendrerit. Cras fermentum tortor suscipit, volutpat lacus at, accumsan lorem.
+            .col-md-6
+                img(src="/img/inicio_nosotros.jpg", alt="imagen nostoros", class="img-fluid")
+        
+        include ./layout/bloque-viajes
+
+    .descuento
+        .containter 
+            .row 
+                .col-md-6 
+                    .contenido 
+                        h3 5% de Descuento
+                        p.titulo Viaje a Canadá
+                        p.fecha Vigencia: 20 de Marzo de 2021 -20 de Marzo 2021  
+                        p.precio $2,258 USD
+    .container 
+        h2.mt-5.text-center Testimoniales
+        include ./layout/bloque-testimoniales
